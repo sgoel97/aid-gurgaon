@@ -11,13 +11,13 @@ const theme = extendTheme({
   components: {
     Text: {
       baseStyle: {
-        fontSize: "lg",
+        fontSize: ["md", "lg"],
         fontFamily: "Montserrat",
         textAlign: "left",
       },
       variants: {
         splash: {
-          fontSize: "5xl",
+          fontSize: ["4xl", null, "5xl"],
           fontWeight: "bold",
           fontFamily: "karla",
           lineHeight: 1.25,
@@ -26,11 +26,11 @@ const theme = extendTheme({
           fontSize: "xl",
           fontWeight: "bold",
           fontFamily: "karla",
-          textAlign: "right",
+          textAlign: ["left", null, "right"],
         },
         title: {
           textTransform: "uppercase",
-          fontSize: "6xl",
+          fontSize: ["4xl", "5xl", "6xl"],
           fontWeight: "bold",
           as: "h2",
           fontFamily: "karla",
@@ -39,7 +39,7 @@ const theme = extendTheme({
         },
         header: {
           textTransform: "uppercase",
-          fontSize: "5xl",
+          fontSize: ["4xl", "5xl"],
           fontWeight: "bold",
           as: "h3",
           fontFamily: "karla",
@@ -53,7 +53,7 @@ const theme = extendTheme({
         },
         subtext: {
           textAlign: "center",
-          fontSize: "2xl",
+          fontSize: ["xl", "2xl"],
           lineHeight: "1.8",
         },
       },

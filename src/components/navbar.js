@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Flex, Button as ChakraButton, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => (
   <Flex
@@ -10,21 +11,22 @@ const Navbar = () => (
     alignItems="center"
     justifyContent="space-between"
   >
-    <Flex>
-      {/* <img src={null} alt="Aid Gurgaun" /> */}
-      <Text>Aid Gurgaun</Text>
-    </Flex>
-    <Flex justifyContent="flex-end" gap={12}>
-      <a href="#about">
+    <a href="/">
+      <Flex h={8}>
+        <img src={Logo} alt="Aid Gurgaun" height="100%" />
+      </Flex>
+    </a>
+    {/* <Flex justifyContent="flex-end" gap={12}>
+      <a href="#about" className="nav-item">
         <Text>About Us</Text>
       </a>
-      <a href="#volunteer">
+      <a href="#volunteer" className="nav-item">
         <Text>Volunteer</Text>
       </a>
-      <a href="#donate">
+      <a href="#donate" className="nav-item">
         <Text>Donate</Text>
       </a>
-    </Flex>
+    </Flex> */}
   </Flex>
 );
 

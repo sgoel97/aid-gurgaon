@@ -14,8 +14,8 @@ const Section = ({ children, bg, id = "", ...props }) => {
       backgroundColor={bg}
       w="100vw"
       justify="center"
-      px={24}
-      py={28}
+      px={[5, 6, 12, 16, 24]}
+      py={[8, 12, 28]}
       color={textColor}
       id={id}
       {...props}
