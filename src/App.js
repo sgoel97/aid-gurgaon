@@ -37,21 +37,21 @@ function App() {
 
       {/* About Us */}
       <Section bg="white" id="about">
-        <Text variant="title" mb={[4, 6, 12, 20]}>
+        <Text variant="title" mb={[4, 6, 12, 16, 20]}>
           Humans of change
         </Text>
-        <Flex mt={8} direction={["column", null, "row"]}>
+        <Flex mt={8} direction={["column", null, null, "row"]} align="center">
           <Flex flex={1}>
-            <Box pr={[0, null, 16]}>
+            <Box pr={[0, null, 20, 8, 16]} pl={[0, null, 20, 0]}>
               <img src={Change} alt="" />
             </Box>
           </Flex>
           <Flex flex={1} alignItems="center">
-            <Box pl={[0, null, 12]}>
-              <Text variant="quote" mt={[4, 8, 12]}>
+            <Box pl={[0, null, null, 8, 12]}>
+              <Text variant="quote" mt={[4, 8, 12, 0]}>
                 {"<< AID has progressed from bamboo sheds to bricks >>"}
               </Text>
-              <Text variant="quote" fontWeight="normal" mt={[3, 2, 1, 0]}>
+              <Text variant="quote" fontWeight="normal" mt={[3, 2, 1]}>
                 Renu Aggarwal
               </Text>
               <Text mt={[6, 8, 10, 12]}>
@@ -67,7 +67,7 @@ function App() {
       </Section>
 
       {/* Our Mission */}
-      <Section bg="yellow" pt={[8, 12, 20]}>
+      <Section bg="yellow" pt={[8, 12, 16, 20]}>
         <Text variant="title">Our Mission</Text>
         <Text variant="subtitle" mt={4}>
           Our{" "}
@@ -75,7 +75,7 @@ function App() {
             Mission statement
           </Text>
         </Text>
-        <Text textAlign="center" mt={10} px={[4, 6, 44]}>
+        <Text textAlign="center" mt={10} px={[4, 6, 12, 20, 44]}>
           AID Gurgaon aims to mainstream as many children as it can. The
           organisation believes that one educated generation is enough to pull a
           family out of poverty. Its vision is that for development to be
@@ -86,7 +86,11 @@ function App() {
 
       {/* Who We Are */}
       <Section bg="white">
-        <Flex direction={["column", null, "row"]} gap={[8, 10, 0]}>
+        <Flex
+          direction={["column", null, null, "row"]}
+          gap={[8, 10, null, 0]}
+          align="center"
+        >
           <Flex flex={4} direction="column">
             <Text variant="header" mb={8}>
               - The Students -
@@ -145,29 +149,37 @@ function App() {
           </Flex>
           <Flex flex={1} />
           <Flex flex={3}>
-            <Box px={[16, 20, 0]}>
+            <Box px={[16, 20, 48, 0]}>
               <img src={WhoWeAre} />
             </Box>
           </Flex>
         </Flex>
       </Section>
 
-      <Section bg="white" pt={[8, 0]}>
-        <Flex direction={["column-reverse", null, "row"]} gap={[12, 10, 0]}>
-          <Flex flex={1} px={[16, 20, 0]}>
-            <img src={Doorstep} alt="" />
+      <Section bg="white" pt={[8, 0, 0, 0, 0, 0]}>
+        <Flex
+          direction={["column-reverse", null, null, "row"]}
+          gap={[12, 10, 16, 0]}
+          align="center"
+        >
+          <Flex flex={1} px={[16, 20, 48, 0]} align="center">
+            <img src={Doorstep} alt="" style={{ objectFit: "cover" }} />
           </Flex>
           <Flex flex={2} direction="column">
-            <Text variant="header" textAlign={["left", null, "right"]} mb={5}>
+            <Text
+              variant="header"
+              textAlign={["left", null, null, "right"]}
+              mb={5}
+            >
               - Education at the doorstep -
             </Text>
             <Text variant="quote">
               {"<< AID has progressed from bamboo sheds to bricks >>"}
             </Text>
-            <Text variant="quote" fontWeight="normal" mt={[3, 2, 1, 0]}>
+            <Text variant="quote" fontWeight="normal" mt={[3, 2, 1]}>
               Renu Aggarwal
             </Text>
-            <Box pl={[0, null, 36]}>
+            <Box pl={[0, null, null, 20, 36]}>
               <Text mt={12} mb={12}>
                 AID Gurgaon was founded in 2007 by volunteers, at a time during
                 which massive constructions were undergoing in the city.
@@ -188,7 +200,7 @@ function App() {
       </Section>
 
       {/* Challenges for Children */}
-      <Section bg="yellow" py={[10, 12, 20]}>
+      <Section bg="yellow" py={[10, 12, 16, 16, 20]}>
         <Text variant="title">
           <Text variant="title" fontWeight="normal" as="span">
             Challenges
@@ -201,25 +213,25 @@ function App() {
       <Section bg="green">
         <SimpleGrid
           columns={[1, null, 2, 3]}
-          spacingX={[0, 0, 10, 24]}
-          spacingY={[10, null, null, 16]}
+          spacingX={[0, 0, 10, 16, 24]}
+          spacingY={[10, null, null, 12, 16]}
           px={[6, null, 4, 0]}
         >
-          {challenges.map((challenge) => (
-            <Challenge description={challenge} />
+          {challenges.map((challenge, i) => (
+            <Challenge description={challenge} index={i} key={i} />
           ))}
         </SimpleGrid>
       </Section>
 
       {/* Volunteer With Us */}
-      <Section bg="green" id="volunteer" mt={8} pt={10}>
+      <Section bg="green" id="volunteer" pt={[24, null, 12, 20, 12]}>
         <Text variant="title">Volunteer With us</Text>
         <Text
           variant="subtext"
-          mt={8}
-          mb={[16, 20]}
+          mt={[8, null, 6, null, 8]}
+          mb={[16, 20, null, null, 24]}
           pt={2}
-          px={[0, null, null, 16]}
+          px={[0, null, 4, 16]}
         >
           If you would like to volunteer, Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -227,7 +239,7 @@ function App() {
         </Text>
         <Flex
           direction={["column", null, "row"]}
-          gap={[16, null, 0]}
+          gap={[16, null, 6, 0]}
           mb={[8, 0]}
         >
           <Stat
@@ -248,24 +260,16 @@ function App() {
         </Flex>
       </Section>
 
-      <Section bg="yellow" py={16} id="donate">
+      <Section bg="yellow" py={[10, 12, 16]} id="donate">
         <Text variant="title">Donate Today</Text>
       </Section>
 
       <Section bg="green" py={[12, 16]}>
-        <Text variant="subtext" px={[0, null, 16]}>
+        <Text variant="subtext" px={[0, null, 4, 12, 16]}>
           If you would like to donate, Lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis
         </Text>
-      </Section>
-
-      <Section bg="green" pt={[12, null, 16]} mt={2} pb={[12, 20]}>
-        <Text variant="title">Our Latest Updates</Text>
-      </Section>
-
-      <Section bg="yellow" pt={12}>
-        <Text variant="title">Our Latest Updates</Text>
       </Section>
 
       <Footer />

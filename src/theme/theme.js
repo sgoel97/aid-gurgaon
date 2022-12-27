@@ -17,7 +17,7 @@ const theme = extendTheme({
       },
       variants: {
         splash: {
-          fontSize: ["4xl", null, "5xl"],
+          fontSize: ["4xl", null, "5xl", "4xl", "5xl", "6xl"],
           fontWeight: "bold",
           fontFamily: "karla",
           lineHeight: 1.25,
@@ -26,11 +26,11 @@ const theme = extendTheme({
           fontSize: "xl",
           fontWeight: "bold",
           fontFamily: "karla",
-          textAlign: ["left", null, "right"],
+          textAlign: ["left", null, null, "right"],
         },
         title: {
           textTransform: "uppercase",
-          fontSize: ["4xl", "5xl", "6xl"],
+          fontSize: ["4xl", "5xl", "6xl", null, null, "7xl"],
           fontWeight: "bold",
           as: "h2",
           fontFamily: "karla",
@@ -39,7 +39,7 @@ const theme = extendTheme({
         },
         header: {
           textTransform: "uppercase",
-          fontSize: ["4xl", "5xl"],
+          fontSize: ["4xl", "5xl", null, null, , null, "6xl"],
           fontWeight: "bold",
           as: "h3",
           fontFamily: "karla",

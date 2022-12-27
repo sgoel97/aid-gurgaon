@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 
-const Challenge = ({ description }) => (
+const Challenge = ({ description, index }) => (
   <Flex
     border="3px solid yellow"
     borderColor="yellow"
@@ -9,6 +9,8 @@ const Challenge = ({ description }) => (
     px={10}
     py={[12, 16]}
     className="challenge"
+    key={index}
+    display={index > 3 ? ["none", null, "flex"] : "flex"}
   >
     <Text
       textAlign="center"
