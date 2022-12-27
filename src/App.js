@@ -159,7 +159,7 @@ function App() {
       <Section bg="white" pt={[8, 0, 0, 0, 0, 0]}>
         <Flex
           direction={["column-reverse", null, null, "row"]}
-          gap={[12, 10, 16, 0]}
+          gap={[12, 16, null, 0]}
           align="center"
         >
           <Flex flex={1} px={[16, 20, 48, 0]} align="center">
@@ -224,7 +224,7 @@ function App() {
       </Section>
 
       {/* Volunteer With Us */}
-      <Section bg="green" id="volunteer" pt={[24, null, 12, 20, 12]}>
+      <Section bg="green" id="volunteer" mt={[16, 0]} pt={[8, 20, 12, 20, 12]}>
         <Text variant="title">Volunteer With us</Text>
         <Text
           variant="subtext"

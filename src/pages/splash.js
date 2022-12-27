@@ -16,7 +16,7 @@ const Splash = () => (
       display={["block", null, null, "none", null, "block"]}
     />
     <Flex flex={4} direction="column" justifyContent="center">
-      <Box px={[4, 6, 12, 12, 20, 24]} mr={["10%", null, null, 0]}>
+      <Box px={[5, 8, 12, 12, 20, 24]} mr={["10%", null, null, 0]}>
         <Text variant="splash" pt={[12, 16, null, 24]}>
           Volunteers do not necessarily have the time; they just have the
           heart...
