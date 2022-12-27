@@ -31,9 +31,9 @@ const Splash = () => (
           - Mahatma Ghandi
         </Text>
         <Text
-          pt={12}
+          pt={[8, 12]}
           pr={[0, null, null, 12, 36]}
-          mb={[16, null, null, 12, 16]}
+          mb={[8, 16, null, 12, 16]}
         >
           Change will not come if we wait for some other person, or if we wait
           for some other time. We are the ones we've been waiting for. We are
