@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 
-const Stat = ({ image, number, description }) => (
+const Stat = ({ icon, number, description }) => (
   <Flex
     flex={1}
     align="center"
@@ -10,7 +10,7 @@ const Stat = ({ image, number, description }) => (
     mx={2}
   >
     <Flex justify="center" w={[28, 36, 28, 32, 36]}>
-      <img src={image} alt="" height="100%" />
+      {icon}
     </Flex>
     <Text
       mt={2}

@@ -9,6 +9,7 @@ const Button = ({ children, to, ...props }) => (
       py={8}
       borderRadius="none"
       _hover={{ bg: "darkRed" }}
+      _active={{ bg: "darkRed" }}
       {...props}
     >
       <Text fontWeight="normal" color="white">

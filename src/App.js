@@ -38,7 +38,7 @@ function App() {
       <Initiatives />
 
       {/* Challenges for Children */}
-      <Children />
+      {/* <Children /> */}
 
       {/* Volunteer With Us */}
       <Volunteer />

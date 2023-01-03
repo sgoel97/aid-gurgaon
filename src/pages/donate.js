@@ -10,9 +10,10 @@ const Donate = () => (
 
     <Section bg="green" py={[12, 16]}>
       <Text variant="subtext" px={[0, null, 4, 12, 16]}>
-        If you would like to donate, Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis
+        AID Gurgaon(NCR) is NCR chapter of AID India <br />
+        Donation can be done on:
+        <br />
+        Account number: 683011010656
       </Text>
     </Section>
   </>

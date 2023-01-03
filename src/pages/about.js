@@ -27,6 +27,13 @@ const About = () => (
             which massive constructions were undergoing in the city. Volunteers
             saw the kids of migrant workers in Every corner of the town and felt
             like something should be done to prevent this abject poverty.
+            <br />
+            <br />
+            As of today, there are six centres opened in Gurgaon welcoming about
+            400 children, all of them being located in different slum areas.
+            Volunteers from AID have worked to open all these AID centres - they
+            visited the communities, identified the slum areas, and convinced
+            the people living in the slums to educate their children.
           </Text>
         </Box>
       </Flex>
