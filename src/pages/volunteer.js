@@ -21,7 +21,7 @@ const Children = () => {
     },
     {
       icon: <FaChalkboardTeacher style={iconStyle} />,
-      number: "258,000",
+      number: "8",
       description: "Teachers working with Aid Gurgaon",
     },
   ];
